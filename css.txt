@@ -1,0 +1,70 @@
+/*
+Font styles
+'Playfair Display', Monospace;
+'M PLUS 1', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Inspiration&family=Luxurious+Roman&family=Playfair+Display&family=Poppins:wght@100&family=Quicksand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Inspiration&family=Luxurious+Roman&family=Playfair+Display&family=Poppins:wght@100&family=Quicksand&display=swap');
+
+body {
+  background-color: #DDCAD9;
+  color: black;
+}
+
+div {
+  position: relative;
+  z-index: 2;
+}
+
+#quote-box{
+  height: 500px;
+  width: 500px;
+  background-color: white;
+}
+
+.background-photo-box{
+  height: 400px;
+  width: 500px;
+  background-color: red; 
+}
+
+img {
+  height: 400px;
+  width: 500px;
+}
+
+.quote-text{
+  height: 50px;
+  width: 500px;
+  background-color: #E5E9EC;
+  font-family: 'Playfair Display', Monospace;
+  font-size: 40px;
+}
+
+#text {
+  
+}
+
+.quote-author{
+  height: 50px;
+  width: 500px;
+  background-color: #EAFDF8; 
+  font-family: 'M PLUS 1', Monospace;
+  font-size: 20px;
+}
+
+#author {
+  float: right;
+}
+
+#tweet-quote {
+  height: 50px;
+  width: 50px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+}
