@@ -43,10 +43,6 @@ img {
   font-size: 40px;
 }
 
-#text {
-  
-}
-
 .quote-author{
   height: 50px;
   width: 500px;
@@ -67,4 +63,12 @@ img {
 .center {
   margin: auto;
   width: 50%;
+}
+
+.buttons {
+  padding: 10px;
+}
+
+.button {
+  padding: 10px;
 }
