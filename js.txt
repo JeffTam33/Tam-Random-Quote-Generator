@@ -1,5 +1,16 @@
-<script>
-  $(document).ready(function() { 
-    
-  });
-</script>
+let authorName = '';
+let randomQuote = '';
+var quoteURL = '';
+
+function getRandomQuote(){
+  console.log("I'm here");
+}
+
+function getQuote(){
+  randomQuote = getRandomQuote();
+  $('#text').text(randomQuote);
+}
+
+$(document).ready(function (){
+  $('#new-quote').on('click', getQuote);
+}) 
