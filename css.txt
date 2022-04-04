@@ -1,16 +1,9 @@
-/*
-Font styles
-'Playfair Display', Monospace;
-'M PLUS 1', cursive;
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Inspiration&family=Luxurious+Roman&family=Playfair+Display&family=Poppins:wght@100&family=Quicksand&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Inspiration&family=Luxurious+Roman&family=Playfair+Display&family=Poppins:wght@100&family=Quicksand&display=swap');
-
-body {
-  background-color: #DDCAD9;
-  color: black;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
 }
 
 div {
@@ -18,57 +11,90 @@ div {
   z-index: 2;
 }
 
-#quote-box{
-  height: 500px;
-  width: 500px;
-  background-color: white;
+body {
+  background-color: #333;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
-.background-photo-box{
-  height: 400px;
-  width: 500px;
-  background-color: red; 
+.footer {
+  width: 450px;
+  text-align: center;
+  display: block;
+  margin: 15px auto 30px auto;
+  font-size: 0.8em;
+  color: #fff;
+  a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+  }
 }
-
-img {
-  height: 400px;
-  width: 500px;
-}
-
-.quote-text{
-  height: 50px;
-  width: 500px;
-  background-color: #E5E9EC;
-  font-family: 'Playfair Display', Monospace;
-  font-size: 40px;
-}
-
-.quote-author{
-  height: 50px;
-  width: 500px;
-  background-color: #EAFDF8; 
-  font-family: 'M PLUS 1', Monospace;
-  font-size: 20px;
-}
-
-#author {
-  float: right;
-}
-
-#tweet-quote {
-  height: 50px;
-  width: 50px;
-}
-
-.center {
-  margin: auto;
-  width: 50%;
-}
-
-.buttons {
-  padding: 10px;
-}
-
-.button {
-  padding: 10px;
+#quote-box {
+  border-radius: 3px;
+  position: relative;
+  //margin:8% auto auto auto;
+  width: 450px;
+  padding: 40px 50px;
+  display: table;
+  background-color: #fff;
+  .quote-text {
+    i {
+      font-size: 1em;
+      margin-right: 0.4em;
+    }
+    text-align: center;
+    width: 450px;
+    height: auto;
+    clear: both;
+    font-weight: 500;
+    font-size: 1.75em;
+  }
+  .quote-author {
+    width: 450px;
+    height: auto;
+    clear: both;
+    padding-top: 20px;
+    font-size: 1em;
+    text-align: right;
+  }
+  .buttons {
+    width: 450px;
+    margin: auto;
+    display: block;
+    .button {
+      height: 38px;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      background-color: #333;
+      outline: none;
+      font-size: 0.85em;
+      padding: 8px 18px 6px 18px;
+      margin-top: 30px;
+      opacity: 1;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.9;
+      }
+      &#tweet-quote,
+      &#tumblr-quote {
+        float: left;
+        padding: 0px;
+        padding-top: 8px;
+        text-align: center;
+        font-size: 1.2em;
+        margin-right: 5px;
+        height: 30px;
+        width: 40px;
+      }
+      &#new-quote {
+        float: right;
+      }
+    }
+  }
 }
